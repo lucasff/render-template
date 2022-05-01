@@ -26,4 +26,4 @@ FROM bitnami/minideb:stretch
 
 COPY --from=build /go/src/app/out/render-template /usr/local/bin/
 
-ENTRYPOINT ["/usr/local/bin/render-template"]
+ENTRYPOINT ["entrypoint.sh"]
