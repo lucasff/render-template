@@ -27,3 +27,6 @@ outputs:
 runs:
   using: docker
   image: 'docker://lukeshard/render-template:latest'
+  args:
+    - ${{ inputs.vars }}
+    - ${{ inputs.template }}
